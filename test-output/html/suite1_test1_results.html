@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Bank Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Bank Test</h1>
+<p>
+  Test duration: 51.970s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.bank.testsuite.BankTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  customerShouldWithdrawMoneySuccessfully
+      </td>
+  <td class="duration">
+    5.539s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click on customer login[[ChromeDriver: chrome on windows (d975486a4b35fbc29ddb8141590bdd77)] -&gt; xpath: //button[normalize-space()=&apos;Customer Login&apos;]]<br />
+                                Search Customer name[[ChromeDriver: chrome on windows (d975486a4b35fbc29ddb8141590bdd77)] -&gt; xpath: //select[@id=&apos;userSelect&apos;]]<br />
+                                Click on log in button[[ChromeDriver: chrome on windows (d975486a4b35fbc29ddb8141590bdd77)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                                 click on deposit tab[[ChromeDriver: chrome on windows (d975486a4b35fbc29ddb8141590bdd77)] -&gt; xpath: //button[normalize-space()=&apos;Deposit&apos;]]<br />
+                                Enter amount 100into amount field [[ChromeDriver: chrome on windows (d975486a4b35fbc29ddb8141590bdd77)] -&gt; xpath: //input[@placeholder=&apos;amount&apos;]]<br />
+                                Click on deposit button[[ChromeDriver: chrome on windows (d975486a4b35fbc29ddb8141590bdd77)] -&gt; xpath: //button[@type=&apos;submit&apos;]]<br />
+                                Click on withdrawal Tab[[ChromeDriver: chrome on windows (d975486a4b35fbc29ddb8141590bdd77)] -&gt; xpath: //button[normalize-space()=&apos;Withdrawl&apos;]]<br />
+                                Enter withdrawal amount50into amount field[[ChromeDriver: chrome on windows (d975486a4b35fbc29ddb8141590bdd77)] -&gt; xpath: //input[@placeholder=&apos;amount&apos;]]<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotInteractableException: element not interactable<br/>
+&nbsp; (Session info: chrome=114.0.5735.199)<br/>
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;<br/>
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [d975486a4b35fbc29ddb8141590bdd77, sendKeysToElement {id=0C26D998371D615178A670C5282D73C3_element_14, value=[Ljava.lang.CharSequence;@1be59f28}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ashis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53118}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53118/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Element: [[ChromeDriver: chrome on windows (d975486a4b35fbc29ddb8141590bdd77)] -&gt; xpath: //input[@placeholder=&apos;amount&apos;]]<br/>
+Session ID: d975486a4b35fbc29ddb8141590bdd77</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)<br />
+              org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)<br />
+              com.sun.proxy.$Proxy17.sendKeys(Unknown Source)<br />
+              com.bank.utility.Utility.sendTextToElement(Utility.java:75)<br />
+              com.bank.pages.AccountPage.m1(AccountPage.java:99)<br />
+              com.bank.testsuite.BankTest.customerShouldWithdrawMoneySuccessfully(BankTest.java:155)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1249)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:808)<br />
+              org.testng.TestRunner.run(TestRunner.java:603)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.bank.testsuite.BankTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  bankManagerShouldAddCustomerSuccessfully
+      </td>
+  <td class="duration">
+    2.407s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Prime", "Testing", "HA2 9sg"</span><br />
+    
+            <div class="testOutput">
+                        Click on manager login button[[ChromeDriver: chrome on windows (501bd25de47753fb855779aff416ecf5)] -&gt; xpath: //button[contains(text(),&apos;Bank Manager Login&apos;)]]<br />
+                                Clink on add customer[[ChromeDriver: chrome on windows (501bd25de47753fb855779aff416ecf5)] -&gt; xpath: //body/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]]<br />
+                                Enter First namePrimeinto first name field[[ChromeDriver: chrome on windows (501bd25de47753fb855779aff416ecf5)] -&gt; xpath: //input[@placeholder=&apos;First Name&apos;]]<br />
+                                Enter last nameTestinginto last name field[[ChromeDriver: chrome on windows (501bd25de47753fb855779aff416ecf5)] -&gt; xpath: //input[@placeholder=&apos;Last Name&apos;]]<br />
+                                Enter postcodeHA2 9sginto postcode field[[ChromeDriver: chrome on windows (501bd25de47753fb855779aff416ecf5)] -&gt; xpath: //input[@placeholder=&apos;Post Code&apos;]]<br />
+                                Clink on add customer[[ChromeDriver: chrome on windows (501bd25de47753fb855779aff416ecf5)] -&gt; xpath: //button[@type=&apos;submit&apos;]]<br />
+                                Getting success add customer message<br />
+                                Click on ok from popup message<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  bankManagerShouldOpenAccountSuccessfully
+      </td>
+  <td class="duration">
+    2.888s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click on manager login button[[ChromeDriver: chrome on windows (5f138cd330b017d069ec65db4971d52e)] -&gt; xpath: //button[contains(text(),&apos;Bank Manager Login&apos;)]]<br />
+                                Click on open account button[[ChromeDriver: chrome on windows (5f138cd330b017d069ec65db4971d52e)] -&gt; xpath: //button[normalize-space()=&apos;Open Account&apos;]]<br />
+                                Search Customer name[[ChromeDriver: chrome on windows (5f138cd330b017d069ec65db4971d52e)] -&gt; xpath: //select[@id=&apos;userSelect&apos;]]<br />
+                                Select currency Pound[[ChromeDriver: chrome on windows (5f138cd330b017d069ec65db4971d52e)] -&gt; xpath: //select[@id=&apos;currency&apos;]]<br />
+                                Click on process button[[ChromeDriver: chrome on windows (5f138cd330b017d069ec65db4971d52e)] -&gt; xpath: //button[normalize-space()=&apos;Process&apos;]]<br />
+                                Getting success add customer message<br />
+                                Click on ok from popup message<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  customerShouldDepositMoneySuccessfully
+      </td>
+  <td class="duration">
+    4.807s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click on customer login[[ChromeDriver: chrome on windows (1c321da7190c2eeeb3511af6ffc25f3b)] -&gt; xpath: //button[normalize-space()=&apos;Customer Login&apos;]]<br />
+                                Search Customer name[[ChromeDriver: chrome on windows (1c321da7190c2eeeb3511af6ffc25f3b)] -&gt; xpath: //select[@id=&apos;userSelect&apos;]]<br />
+                                Click on log in button[[ChromeDriver: chrome on windows (1c321da7190c2eeeb3511af6ffc25f3b)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                                 click on deposit tab[[ChromeDriver: chrome on windows (1c321da7190c2eeeb3511af6ffc25f3b)] -&gt; xpath: //button[normalize-space()=&apos;Deposit&apos;]]<br />
+                                Enter amount 100into amount field [[ChromeDriver: chrome on windows (1c321da7190c2eeeb3511af6ffc25f3b)] -&gt; xpath: //input[@placeholder=&apos;amount&apos;]]<br />
+                                Click on deposit button[[ChromeDriver: chrome on windows (1c321da7190c2eeeb3511af6ffc25f3b)] -&gt; xpath: //button[@type=&apos;submit&apos;]]<br />
+                                Verify customer Name<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  customerShouldLoginAndLogoutSuccessfully
+      </td>
+  <td class="duration">
+    4.418s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click on customer login[[ChromeDriver: chrome on windows (dd17791078785dc9f6697a35c430438b)] -&gt; xpath: //button[normalize-space()=&apos;Customer Login&apos;]]<br />
+                                Search Customer name[[ChromeDriver: chrome on windows (dd17791078785dc9f6697a35c430438b)] -&gt; xpath: //select[@id=&apos;userSelect&apos;]]<br />
+                                Click on log in button[[ChromeDriver: chrome on windows (dd17791078785dc9f6697a35c430438b)] -&gt; xpath: //button[normalize-space()=&apos;Login&apos;]]<br />
+                                Verify customer Name<br />
+                                Getting logout text<br />
+                                Click on logout button[[ChromeDriver: chrome on windows (dd17791078785dc9f6697a35c430438b)] -&gt; xpath: //button[normalize-space()=&apos;Logout&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
